@@ -1,27 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEGO Speed Champion</title>
+</head>
 
-  <body>
-    <h1>Xin chào, manh!</h1>
-    <h2>Just me!</h2>
-    <p>
-      Chào mừng bạn đến với trang web của tôi. Đây là một trang HTML đơn giản.
-    </p>
-    <br />
-    <b>Hãy khám phá và tìm hiểu thêm!</b>
-    <em>Chúc bạn có một trải nghiệm tuyệt vời!</em>
-    <ul>
-      <li>Trang chủ</li>
-      <li>Giới thiệu</li>
-      <li>Dịch vụ</li>
-      <li>Liên hệ</li>
-    <a href="https://fda.neu.edu.vn/" target="_blank">FDA - NEU</a> <br /><br />
-    <img src="https://xdcs.cdnchinhphu.vn/446259493575335936/2025/8/22/11111111111111111111-17558573293691222957502-1755858731696-17558587320521051543552.jpg" alt="NEU Logo" width="500" height="300" />
-  </body>
+<body>
+
+  <header>
+    <h1>LEGO Speed Champions - Bộ Sưu Tập Siêu Xe Thu Nhỏ</h1>
+    <p>Khám phá thế giới tốc độ đỉnh cao qua từng khối gạch LEGO, nơi tái hiện chân thực các huyền thoại siêu xe từ Ferrari, Porsche, McLaren cho đến Lamborghini với độ hoàn thiện 8-stud sắc nét.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/LEGO_Speed_Champions_logo.webp?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Theme Speed Champions" width="300">
+
+    <nav aria-label="Điều hướng danh mục">
+      <ul>
+        <li><a href="#overview">Tổng Quan Dòng Xe</a></li>
+        <li><a href="#wave-2026">Wave 2026 Sets</a></li>
+        <li><a href="#wave-2025">Wave 2025 Sets</a></li>
+        <li><a href="#database-table">Bảng Tra Cứu Tình Trạng</a></li>
+        <li><a href="#filter-form">Bộ Lọc & Tìm Kiếm Set</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Wave 2026 Sets -->
+    <section id="wave-2026">
+      <h2>Wave 2026 Sets</h2>
+
+      <article>
+        <h3>Lightning McQueen</h3>
+        <p>Set: #77255 | Số mảnh: 270</p>
+      </article>
+
+      <article>
+        <h3>APXGP Team Race Car from F1 The Movie</h3>
+        <p>Set: #77252 | Số mảnh: 268</p>
+      </article>
+    </section>
+
+    <!-- Section Wave 2025 Sets -->
+    <section id="wave-2025">
+      <h2>Wave 2025 Sets</h2>
+
+      <article>
+        <h3>Ferrari SF-24 F1 Race Car</h3>
+        <p>Set: #77242 | Số mảnh: 275</p>
+      </article>
+
+      <article>
+        <h3>Oracle Red Bull Racing RB20 F1 Race Car</h3>
+        <p>Set: #77243 | Số mảnh: 251</p>
+      </article>
+    </section>
+
+    <!-- Section Bảng tra cứu tình trạng -->
+    <section id="database-table">
+      <h2>Bảng Tra Cứu Tình Trạng</h2>
+      
+      <table border="1">
+        <caption>Thông tin các set LEGO Speed Champions</caption>
+        <thead>
+          <tr>
+            <th>Tên Xe</th>
+            <th>Năm sản xuất</th>
+            <th colspan="2">Chi tiết</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Set</th>
+            <th>Tình trạng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jaguar Project 7 & Land Rover Defender</td>
+            <td>2026</td>
+            <td>77264</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>Bugatti Centodieci Hyper Sports Car</td>
+            <td>2025</td>
+            <td>77240</td>
+            <td>On Sale</td>
+          </tr>
+          <tr>
+            <td>NASCAR Next Gen Chevrolet Camaro ZL1</td>
+            <td>2024</td>
+            <td>76935</td>
+            <td>Retired</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Bộ lọc & Tìm kiếm set -->
+    <section id="filter-form">
+      <h2>Bộ lọc & Tìm kiếm Set</h2>
+
+      <form action="/predict" method="get">
+        <!-- Ô text có label -->
+        <p>
+          <label for="keyword">Tên xe hoặc từ khóa:</label><br>
+          <input type="text" id="keyword" name="keyword" required>
+        </p>
+
+        <!-- Ô number -->
+        <p>
+          <label for="set">Mã set:</label><br>
+          <input type="number" id="set" name="set">
+        </p>
+
+        <!-- Ô select -->
+        <p>
+          <label for="year">Năm phát hành:</label><br>
+          <select id="year" name="year">
+            <option value="all">Tất cả các năm</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+          </select>
+        </p>
+
+        <!-- Ô text có label -->
+        <p>
+          <span>Tình trạng:</span><br>
+          <input type="radio" id="all-status" name="status" value="all" checked>
+          <label for="all-status">Tất cả</label>
+
+          <input type="radio" id="on-sale" name="status" value="on-sale">
+          <label for="on-sale">On Sale</label>
+
+          <input type="radio" id="retired" name="status" value="retired">
+          <label for="retired">Retired</label>
+        </p>
+
+        <!-- Nút Submit -->
+        <p>
+          <button type="submit">Tìm kiếm</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 LEGO Speed Champions Fanpage. Trang web thực hành HTML Semantic.</p>
+  </footer>
+
+</body>
 </html>
