@@ -6,15 +6,74 @@
     <title>Lab 01 - Week 2</title>
 </head>
 <body>
-    <h1>Giới thiệu</h1>
-    <p>Xin chào, tôi là sinh viên năm 2 tại Đại học Kinh tế Quốc dân, ngành Khoa học dữ liệu.</p>
-    <p>Đây là trang web của khoa tôi
-    <a href="https://fda.neu.edu.vn/" target="_blank">Khoa Khoa học Dữ liệu & Trí tuệ nhân tạo</a></p>
-    <img src="https://tse1.mm.bing.net/th/id/OIP.SYzjJNS_TRLw7Sahnkx5IwHaId?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="FDA Logo" width="200" />
-    <p>FDA hiện đang đào tạo các ngành học</p>
-    <ul>
-        <li>Khoa học dữ liệu</li>
-        <li>Trí tuệ nhân tạo</li>
-        <li>Công nghệ logistic và quản lý chuỗi cung ứng</li>
+    <header>
+        <h1>Lab 01 - Week 2</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="w2_lab1.html">Giới thiệu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Giới thiệu về bản thân</h2>
+            <p>Xin chào, tôi là sinh viên năm 2 tại Đại học Kinh tế Quốc dân, ngành Khoa học dữ liệu.</p>
+            <p>Đây là trang web của khoa tôi
+                <a href="https://fda.neu.edu.vn/" target="_blank">Khoa Khoa học Dữ liệu & Trí tuệ nhân tạo</a></p>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.SYzjJNS_TRLw7Sahnkx5IwHaId?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="FDA Logo" width="200" />
+            <p>FDA hiện đang đào tạo các ngành học</p>
+        <table border="1">
+            <caption>Danh sách các ngành học tại FDA</caption>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên ngành</th>
+                    <th>Mã tuyển sinh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Khoa học dữ liệu</td>
+                    <td>EP15</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Trí tuệ nhân tạo</td>
+                    <td>EP16</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Công nghệ logistic và quản lý chuỗi cung ứng</td>
+                    <td>EP20</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <section>
+            <h2>Tư vấn tuyển sinh</h2>
+            <label for="name">Nhập tên của bạn:</label>
+            <input type="text" id="name" name="name"/> <br />
+
+            <label for="email">Nhập email của bạn:</label>
+            <input name="email" type="email"/> <br />
+
+            <label for="admission">Chọn ngành học:</label>
+            <select id="admission" name="admission">
+                <option value="EP15">Khoa học dữ liệu</option>
+                <option value="EP16">Trí tuệ nhân tạo</option>
+                <option value="EP20">Công nghệ logistic và quản lý chuỗi cung ứng</option>
+            </select>
+        </section>
+        <section>
+            <h2>Thông tin liên hệ</h2>
+            <p>Email: <a href="mailto:fda@neu.edu.vn">fda@neu.edu.vn</a></p>
+            <p>Điện thoại: <a href="tel:+842436280280">+(84)2436280280</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lab 01 - Week 2</p>
+    </footer>
 </body>
 </html>
