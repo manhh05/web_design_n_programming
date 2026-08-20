@@ -1,0 +1,14 @@
+body {
+    background-color: #1e1e24;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+}
